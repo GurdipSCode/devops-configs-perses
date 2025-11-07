@@ -1,4 +1,4 @@
-# Perses Dashboards as Code
+# devops-configs-perses
 
 This repository contains a complete setup for [Perses](https://perses.dev), a modern dashboarding solution with dashboards defined as code.
 
