@@ -1,0 +1,17 @@
+database:
+  file:
+    folder: "/var/lib/perses"
+    extension: "yaml"
+
+security:
+  # Enable or disable authentication
+  enable_auth: false
+  # For production, set enable_auth to true and configure proper authentication
+
+# Dashboard provisioning configuration
+provisioning:
+  # Interval to check for dashboard changes
+  interval: 10s
+  folders:
+    - /perses/dashboards
+    - /perses/datasources
