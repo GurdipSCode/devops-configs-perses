@@ -1,0 +1,26 @@
+kind: "Datasource"
+metadata:
+  name: "PrometheusDemo"
+  project: "perses"
+spec:
+  default: true
+  plugin:
+    kind: "PrometheusDatasource"
+    spec:
+      # Update this URL to point to your Prometheus instance
+      direct_url: "http://prometheus:9090"
+      
+      # If your Prometheus is on a different host, use:
+      # direct_url: "http://your-prometheus-host:9090"
+      
+      # For external Prometheus with proxy:
+      # proxy:
+      #   kind: "HTTPProxy"
+      #   spec:
+      #     url: "http://your-prometheus-host:9090"
+      #     allowed_endpoints:
+      #       - "/api/v1/query"
+      #       - "/api/v1/query_range"
+      #       - "/api/v1/series"
+      #       - "/api/v1/labels"
+      #       - "/api/v1/label/__name__/values"
